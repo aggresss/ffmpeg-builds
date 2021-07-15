@@ -1,5 +1,5 @@
 # ------------------------------------------------------------------------------
-# CMakeLists.txt for libghttp Project Top Level
+# CMakeLists.txt for Project Top Level
 # ------------------------------------------------------------------------------
 cmake_minimum_required(VERSION 3.0)
 
