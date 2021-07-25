@@ -110,7 +110,6 @@ EXTERNALPROJECT_ADD(
   PATCH_COMMAND ${CMAKE_SOURCE_DIR}/patches/patch-manager.sh libtheora
   CONFIGURE_COMMAND ./configure
     --prefix=${CMAKE_BINARY_DIR}
-    --with-pic
     --enable-static
     --disable-shared
     --disable-oggtest
