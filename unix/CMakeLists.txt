@@ -379,7 +379,7 @@ elseif (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
           --enable-runtime-cpudetect
           --disable-doc
           --disable-debug
-          --disable-ffplay
+          --enable-ffplay
           --disable-indevs
           --disable-outdevs
           --extra-cflags=-I${CMAKE_BINARY_DIR}/include\ --static
