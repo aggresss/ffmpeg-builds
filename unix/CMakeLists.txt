@@ -8,8 +8,8 @@ SET(ENV{PKG_CONFIG_PATH} ${CMAKE_BINARY_DIR}/lib/pkgconfig)
 if (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
   EXTERNALPROJECT_ADD(
     ffmpeg
-    # URL https://ffmpeg.org/releases/ffmpeg-4.4.tar.gz
-    URL ${CMAKE_SOURCE_DIR}/vendor/ffmpeg-4.4.tar.gz
+    # URL https://ffmpeg.org/releases/ffmpeg-4.3.6.tar.gz
+    URL ${CMAKE_SOURCE_DIR}/vendor/ffmpeg-3.6.tar.gz
     PATCH_COMMAND ${CMAKE_SOURCE_DIR}/patches/patch-manager.sh ffmpeg
     CONFIGURE_COMMAND
         PATH=$ENV{PATH} PKG_CONFIG_PATH=$ENV{PKG_CONFIG_PATH} ./configure
@@ -33,8 +33,8 @@ if (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
 elseif (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
   EXTERNALPROJECT_ADD(
     ffmpeg
-    # URL https://ffmpeg.org/releases/ffmpeg-4.4.tar.gz
-    URL ${CMAKE_SOURCE_DIR}/vendor/ffmpeg-4.4.tar.gz
+    # URL https://ffmpeg.org/releases/ffmpeg-4.3.6.tar.gz
+    URL ${CMAKE_SOURCE_DIR}/vendor/ffmpeg-4.3.6.tar.gz
     PATCH_COMMAND ${CMAKE_SOURCE_DIR}/patches/patch-manager.sh ffmpeg
     CONFIGURE_COMMAND
         PATH=$ENV{PATH} PKG_CONFIG_PATH=$ENV{PKG_CONFIG_PATH} ./configure
